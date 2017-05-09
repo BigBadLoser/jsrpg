@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Project Template</title>
+    <title>JS RPG</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/paper.bootstrap.min.css" rel="stylesheet">
@@ -18,16 +18,60 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/inventory.js"></script>
+    
     <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <!-- HTML5 shim and Respond.js for I vc v vE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
-    
+    <div class="container-fluid">
+      <div class="row" id="topRow">
+        <div class="col-md-3">
+          <div class="border">
+            <!-- PLAYER HEALTH BAR START -->
+            <div class="progress text-center" id="playerHealthBarContainer">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%" id="playerHealthBar">
+                <p id="playerHealthBarLabel">T</p>
+              </div>
+            </div>
+            <!-- PLAYER HEALTH BAR END -->
+            <div class="progress text-center" id="playerManaBarContainer">
+              <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%" id="playerManaBar">
+                <p id="playerManaBarLabel">T</p>
+              </div>
+            </div>
+            <button class="btn btn-danger" onclick="testFunction()">ttt</button>
+            <button class="btn btn-danger" onclick="giveItem()">gib</button>
+            
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="border">
+            <div class="progress text-center" id="bossHealthBarContainer">
+              <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%" id="bossHealthBar">
+                <p id="bossHealthBarLabel">T</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="test"></div>
+        </div>
+      </div>
+      
+      <div class="row" id="bottomRow">
+        <div class="col-md-3">
+          <div class="test"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="test" id="inventory">
+            
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="test"></div>
+        </div>
+      </div>
+    </div>
   </body>
 
     

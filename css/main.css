@@ -1,0 +1,71 @@
+#topRow {
+    height: 70%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#bottomRow {
+    margin-top: 5px;
+    margin-bottom:5px;
+    height:30%;
+}
+
+.test {
+    width: 100%;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+.border {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+#bossHealthBarContainer {
+    height: 40px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: black;
+    
+}
+#playerHealthBarContainer {
+    height: 20px;
+    margin-bottom: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: black;
+}
+#playerManaBarContainer {
+    height: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: black;
+}
+
+.btn {
+    margin: 0px;
+}
+
+.progress {
+    position: relative;
+    width: 100%;
+}
+
+.progress p {
+    position: absolute;
+    display: block;
+    width: 100%;
+    color: black;
+ }
+ 
+ .inv-row {
+    margin: 0 auto;
+ }
+ .inv-box {
+    background-color: tan;
+    height: 70px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:black;
+    margin: 5px;
+    
+ }
